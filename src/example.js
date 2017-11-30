@@ -1,5 +1,5 @@
 import React from 'react';
-import createTheme from 'spectacle-theme-nova';
+import createTheme from 'spectacle-theme-nova/bundle';
 import {
     Spectacle,
     Appear,
@@ -19,6 +19,10 @@ import {
     Slide,
     Text,
 } from 'spectacle';
+import 'prismjs/components/prism-core';
+import 'prismjs/components/prism-clike';
+import 'spectacle-theme-nova/syntax/prism-javascript';
+import 'spectacle-theme-nova/syntax/prism.nova.css';
 import 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';
 import 'spectacle-theme-nova/syntax/prism-javascript';
@@ -478,7 +482,7 @@ const Presentation = () => (
             </List>
         </Slide>
         <Slide>
-            Como última slide compartir un proyecto graphql en el que abordar la casuística formulario de pago con graphql e invitar a los chicos a contrbuir justo antes de la charla en yn fork sobre Technoactivity
+            <Link href="https://github.com/denjalonso/graphql-paymentform" title="Para pancho y Cristian"/>
         </Slide>
         <Slide>
             <Heading1>Thanks</Heading1>
